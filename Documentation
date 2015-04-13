@@ -1,0 +1,73 @@
+Current Functionality:
+	Enemies and Toon all extend Actor
+		Actors all contain a hitbox.
+		Hitbox works and isn't too bad to work with, but it makes me nervous.
+	Toon can run and jump.
+	Crow has two flight patterns: parabolic arc and horizontal line
+	Mole will pop out of ground
+	Traffic Cone... is a thing. for now.
+	Road moves and speeds up.
+	Road speed increases over time.
+	Acorns appear pseudo randomly and boost score multiplier.
+	Energy Drinks appear and boost speed.
+	Home screen.
+	Buttons exist and react to click
+		Each button reacts only in the game mode to which it was assigned
+		The buttons also turn when moused over, and slowly return to sitting when mouse off
+	Instructions screen - IN PROGRESS (Some lag going from page 1 to page 2 for first time)
+	Game Over Screen - IN PROGRESS
+
+10/30/14
+	Refactored the way images are stored:
+		They are now a static property of the object with which they are associated
+		Created a new constructor for actors that grabs width and height from image
+			Having trouble implementing it. Leaving that for later. Maybe.
+		
+	Implemented dark cloud to be used for winter
+	Implemented snowflakes falling to symbolize winter.
+	Idea: Frisbee replaces traffic cone.
+	Implemented day and night cycle.
+		Sun circles around.
+		Sky gets lighter and darker based on sun's y pos. Looks pretty schweet.
+		
+11/1/2014
+	Been working on high scores.
+		Can now read high scores from file
+		Can add a new score page
+		Can write high scores to file
+		Preliminary High Score page created
+		Some lag first time loading
+	Car has been drawn and can be placed on the stage.
+	
+11/2/2014
+	Car now has some basic movement.
+	Messed with some features of hyper
+		Hyper is now a property associated with Toon
+		Now jumps higher when hyper
+		Now trips for less time
+		
+11/4/2014
+	Toon now has a sitting image
+	All of Toon's images are now associated with Toon
+	Toon now has a "riding" variable to check if he is riding or not
+		Artist uses this
+	HitBox is fairly easy to use, but something about it feels fragile
+	Reduced extra hyper jump. I decided I want to Toon to stay on the screen.
+	Hitbox is making me mad, I need to rework it.
+		Doing it. Added new methods.
+		Fixed how it deals with width and height. I like it better now.
+		Had to make some changes to Actor, too
+	AppearChance is now a property of the actor
+	
+11/8/14
+	Updated snowflakes
+	Forgot to update the last couple days, but I did things
+	Baseball enemy is implemented, and cone is removed
+		Ball bounces right-to-left and spins counter-clockwise 
+	Car is fully implemented.
+	HighScoreList is fully implemented.
+	Finished Theme. 
+	Sounds added.
+	Game V1.0 complete.
+	
+	
